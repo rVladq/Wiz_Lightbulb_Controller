@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800;900&family=Varela+Round&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, 'sans-serif';
+    font-weight: 600;
+}
+
+body {
+    background-color: #0d0b1c;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+
+.choose_colormode{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px; /* This value makes it round */
+    background: orange;
+    opacity: 100%; /* Default background color */
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* This value makes it round */
+    background: white;
+    cursor: pointer;
+}
+
+.lamp {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px;
+}
+
+.lamp-top {
+    background: black;
+    height: 100px;
+    width: 10px;
+}
+
+.lamp-middle {
+    background: black;
+    border-radius: 50px 50px 0 0;
+    height: 30px;
+    width: 50px;
+}
+
+.lamp-bottom {
+    background: black;
+    border-radius: 100px 100px 0 0;
+    cursor: pointer;
+    height: 80px;
+    width: 150px;
+    position: relative;
+    top: -10px;
+}
+
+.light--container{
+    position: relative;
+    top: -10px;
+
+    z-index: -1;
+}
+
+.light {
+    clip-path: polygon(40% 0, 60% 0, 80% 100%, 20% 100%);
+    height: 550px;
+    width: 700px;
+}
+

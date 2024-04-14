@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './style.css'
 
-function App() {
-  return (
+import Lamp from './components/Lamp'
+import ControlMenu from './components/ControlMenu'
+
+export default function App() {
+
+    const [intensity, setIntensity] = React.useState(100);
+    const [color, setColor] = React.useState('');
+
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="home">
+            <ControlMenu intensity={intensity} setIntensity={setIntensity} color={color} setColor={setColor} />
+            <Lamp intensity={intensity} color={color} />
+        </div>
     </div>
   );
+  
 }
-
-export default App;
