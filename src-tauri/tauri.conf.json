@@ -11,6 +11,9 @@
     "version": "0.1.0"
   },
   "tauri": {
+    "systemTray": {
+      "iconPath": "icons/128x128.png"
+    },
     "allowlist": {
       "all": false
     },
@@ -29,7 +32,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "wasd.dsaw",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -55,11 +58,13 @@
     },
     "windows": [
       {
+        "title": "Wiz Bulb Controller",
         "fullscreen": false,
-        "height": 600,
-        "resizable": true,
-        "title": "Wiz",
-        "width": 800
+        "minWidth": 1250,
+        "minHeight": 820,
+        "width": 1250,
+        "height": 820,
+        "resizable": false
       }
     ]
   }

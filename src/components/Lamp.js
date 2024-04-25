@@ -5,10 +5,8 @@ export default function Lamp({ intensity, color }){
 
     const rgbColor = hexToRgb(color).rgb;
 
-    console.log(intensity, rgbColor);
-
     let light_style = {
-        'background': `linear-gradient(to bottom, ${rgbColor} 0%, #00000000 ${intensity - 10}%)`
+        'background': `linear-gradient(to bottom, ${rgbColor} 0%, #00000000 ${intensity}%)`
     };
 
     let light_container_style = {

@@ -8,7 +8,12 @@
     font-weight: 600;
 }
 
+p, h1, h2, h3 {
+    user-select: none; /* Prevent text selection */
+}
+
 body {
+    font-size: 24px; /* Adjust the font size as needed */
     background-color: #0d0b1c;
     color: white;
 }
@@ -23,12 +28,93 @@ body {
 }
 
 .home {
+    height: 100%;
+    width: 100%;
+    padding-left: 10%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
-    gap: 300px;
+    gap: 20px;
+}
+
+input[type="text"] {
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.ip--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.ipBox {
+    height: 30px;
+    width: 180px;
+    padding-left: 5px;
+}
+
+.btnSendCommand {
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgb(210, 74, 0);
+
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+
+    transition: all 0.1s;
+}
+
+.btnSendCommand:active {
+    transform: scale(0.9);
+}
+
+.instructionsButton {
+    position: absolute;
+    left: 11%;
+    height: 27px;
+    width: 25px;
+    border-radius: 5px;
+    background-color: white;
+
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+
+    transition: all 0.1s;
+}
+
+.instructionsButton > h1 {
+    color: black;
+    font-size: 25px;
+}
+
+.instructionsButton:active {
+    transform: scale(0.9);
+}
+
+.instructions {
+    background-color: black;
+    padding: 10px;
+    padding-left: 35px;
+    border-radius: 10px;
+    position: absolute;
+    left: 5.5%;
+    top: 29%;
+}
+
+.control_menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
 }
 
 .choose_colormode{
@@ -36,25 +122,43 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
     gap: 5px;
+}
+
+.tempCircle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+input[type="radio"] {
+    width: 30px; /* Adjust the width */
+    height: 30px; /* Adjust the height */
+}
+
+input[type="radio"]:checked {
+    background-color: black; /* Change background color when checked */
 }
 
 input[type=range] {
     -webkit-appearance: none;
-    width: 100%;
-    height: 10px;
-    border-radius: 5px; /* This value makes it round */
-    background: orange;
+    width: 200px;
+    height: 20px;
+    border-radius: 10px; /* This value makes it round */
+    /* background: linear-gradient(90deg, orange 60%, white 60%); */
     opacity: 100%; /* Default background color */
     outline: none;
+    box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.8);
 }
 
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%; /* This value makes it round */
-    background: white;
+    width: 15px;
+    height: 35px;
+    background: white; /* Gradient for the center */
+    border-radius: 20%; /* This value makes it round */
     cursor: pointer;
 }
 
@@ -101,4 +205,3 @@ input[type=range]::-webkit-slider-thumb {
     height: 550px;
     width: 700px;
 }
-
