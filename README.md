@@ -11,7 +11,7 @@ You still need to register the lightbulb on the official phone app in order to f
 ## Installation
 
 - **Windows (64-bit)**
-  - [Download Installer](https://github.com/rVladq/Wiz_Lightbulb_Controller/blob/main/wiz_0.1.0_x64-setup.exe)
+<a href="https://github.com/rVladq/Wiz_Lightbulb_Controller/blob/main/wiz_0.1.0_x64-setup.exe" title="Download" download>Download Installer</a>
 
 - **Linux**
   - Clone the repository
