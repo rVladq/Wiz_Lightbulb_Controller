@@ -4,7 +4,7 @@ This app allows you to control a Wiz Lightbulb from your computer.
 
 ## IMPORTANT
 
-You still need to register the lightbulb on the official phone app in order to find it's ID.
+You still need to register the lightbulb on the official phone app in order to find it's IP.
 
 ![](/images/app-example.png)
 
