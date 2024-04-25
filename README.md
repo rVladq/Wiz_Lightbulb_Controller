@@ -21,7 +21,7 @@ You still need to register the lightbulb on the official phone app in order to f
 
 ## Usage
 
-   - Enter the IP **(this only needs to be done once)**.
+   - Enter the IP **(remains saved)**.
    - Select your settings.
    - Press **SEND**.
 
