@@ -4,8 +4,8 @@ This app allows you to control a Wiz Lightbulb from your computer.
 
 ## Technologies
 
-- [Tauri](https://tauri.app/) for backend.
-- [React.js](https://react.dev/) for frontend.
+- [Tauri](https://tauri.app/) backend.
+- [React.js](https://react.dev/) frontend.
 
 ## IMPORTANT
 
