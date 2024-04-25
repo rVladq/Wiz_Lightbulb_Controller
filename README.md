@@ -23,7 +23,7 @@ You still need to register the lightbulb on the official phone app in order to f
 
    - Enter the IP **(this only needs to be done once)**.
    - Select your settings.
-   - Press the **SEND** button.
+   - Press **SEND**.
 
 ## Instructions for retrieving the IP
 
