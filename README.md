@@ -2,6 +2,11 @@
 
 This app allows you to control a Wiz Lightbulb from your computer.
 
+## Technologies
+
+- [Tauri](https://tauri.app/) for backend.
+- [React.js](https://react.dev/) for frontend.
+
 ## IMPORTANT
 
 You still need to register the lightbulb on the official phone app in order to find it's IP.
