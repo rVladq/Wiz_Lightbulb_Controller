@@ -6,7 +6,7 @@ This app allows you to control a Wiz Lightbulb from your computer.
 
 - [Tauri](https://tauri.app/) - backend
 - [React.js](https://react.dev/) - frontend
-- [Wireshark](https://www.wireshark.org/) was used to scan the packets sent by the official (phone) app.
+- [Wireshark](https://www.wireshark.org/) was used to scan the packets sent by the official (phone) app.  
 Info found:
   - UDP
   - listens on port 44556
