@@ -8,11 +8,12 @@ This app allows you to control a Wiz Lightbulb from your computer.
 - [React.js](https://react.dev/) - frontend
 - [Wireshark](https://www.wireshark.org/) was used to scan the network for the packets sent to the lightbulb by the official (phone) app.  
 Info found:
-- The lightbulbs runs an UDP server that listens on port 44556
-- Packet payloads:
-- - 
-- -
-The rust backend sends an UDP message to the lightbulb with one of these payloads.
+  - UDP
+  - listens on port 44556
+  - Packet payloads:
+    - 
+    -
+- The rust backend sends an UDP message to the lightbulb with one of these payloads.
 
 ## IMPORTANT
 
