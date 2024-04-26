@@ -2,6 +2,12 @@
 
 This app allows you to control a Wiz Lightbulb from your computer.
 
+## IMPORTANT
+
+You still need to register the lightbulb on the official phone app in order to find it's IP.
+
+![](/images/app-example.png)
+
 ## Technologies
 
 - [Tauri](https://tauri.app/) - backend
@@ -9,17 +15,13 @@ This app allows you to control a Wiz Lightbulb from your computer.
 - [Wireshark](https://www.wireshark.org/) was used to scan the packets sent by the official (phone) app.  
 Info found:
   - UDP
-  - listens on port 44556
+  - listens on port 38899
   - Packet payloads:
-    - .
-    - .
-- The rust backend sends an UDP message to the lightbulb with one of these payloads.
+    - {"id":1,"method":"setPilot","params":{"r":`0-255`,"g":`0-255`,"b":`0-255`,"dimming": `10-100%`}} for changing rgb color
+    - {"id":1,"method":"setPilot","params":{"temp":`2200-6400`,"dimming":`10-100%`}} for changing temperature
+- The rust backend sends an UDP message to the lightbulb with either of the payloads.
 
-## IMPORTANT
 
-You still need to register the lightbulb on the official phone app in order to find it's IP.
-
-![](/images/app-example.png)
 
 ## Installation
 
