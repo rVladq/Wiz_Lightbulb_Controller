@@ -12,6 +12,7 @@ Info found:
   - listens on port 44556
   - Packet payloads:
     - .
+    - .
 - The rust backend sends an UDP message to the lightbulb with one of these payloads.
 
 ## IMPORTANT
