@@ -13,7 +13,7 @@ You still need to register the lightbulb on the official phone app in order to f
 - [Tauri](https://tauri.app/) - backend
 - [React.js](https://react.dev/) - frontend
 - [Wireshark](https://www.wireshark.org/) was used to scan the packets sent by the official (phone) app.  
-Info found:
+Info:
   - UDP
   - listens on port 38899
   - Packet payloads:
